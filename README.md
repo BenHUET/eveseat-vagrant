@@ -1,4 +1,4 @@
-# Usage
+# Installation
 
 * [Download and install Vagrant](https://www.vagrantup.com/)
 * `git clone git@github.com:BenHUET/eveseat-vagrant.git`
@@ -8,6 +8,13 @@
 * `sudo /etc/apache2/sites-available/seat.conf` and edit the `ServerAlias` value by the correct address for this virtual machine
 * `sudo apachectl restart`
 
+# Usage
+
 You can now connect to your SeAT instance by browsing to `http://{ip address of the VM}/`.
+
+## Credentials
+
+* SeAT `admin:password`
+* MySQL `root:password` (remote access allowed)
 
 [More info about Vagrant here.](https://www.vagrantup.com/docs/)
