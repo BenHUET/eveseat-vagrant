@@ -1,0 +1,8 @@
+#!/usr/bin/expect
+
+set timeout 10
+spawn php /var/www/seat/artisan seat:admin:reset
+expect "Please enter a min 6 character" { send "password\r" }
+spawn php /var/www/seat/artisan seat:admin:email
+expect "Email" { send "vagrant@ubuntu.local\r" }
+interact
