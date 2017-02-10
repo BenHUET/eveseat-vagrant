@@ -1,6 +1,10 @@
+# Prerequisites
+
+* [Download and install Vagrant.](https://www.vagrantup.com/)
+* [Virtualbox 5.0.X.](https://www.virtualbox.org/wiki/Download_Old_Builds_5_0)
+
 # Installation
 
-* [Download and install Vagrant](https://www.vagrantup.com/)
 * `git clone git@github.com:BenHUET/eveseat-vagrant.git`
 * `cd eveseat-vagrant`
 * `vagrant up`. It can take some times since it's deploying a whole dev environnement (mysql, php, apache, composer...) and configuring SeAT.
