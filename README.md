@@ -1,7 +1,7 @@
 # Prerequisites
 
 * [Download and install Vagrant.](https://www.vagrantup.com/) [More info about Vagrant here.](https://www.vagrantup.com/docs/)
-* [Virtualbox 5.0.X.](https://www.virtualbox.org/wiki/Download_Old_Builds_5_0)
+* [Virtualbox 5.0.X. (recommended)](https://www.virtualbox.org/wiki/Download_Old_Builds_5_0) (5.1 should work but if you're having issue, consider downgrading to 5.0)
 
 # Installation
 
