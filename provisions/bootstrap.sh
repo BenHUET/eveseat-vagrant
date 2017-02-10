@@ -30,7 +30,7 @@ systemctl enable supervisor
 supervisorctl reload
 crontab -u www-data /vagrant/provisions/crontab
 adduser ubuntu www-data
-chown -R ubuntu:www-data /var/www
+chown -R www-data:www-data /var/www
 chmod -R guo+w /var/www/seat/storage/
 cp /vagrant/provisions/vhost /etc/apache2/sites-available/seat.conf
 a2dissite 000-default.conf
