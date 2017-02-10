@@ -23,7 +23,4 @@ You can now connect to your SeAT instance by browsing to `http://{ip address of 
 
 # Troubleshooting
 
-If the installation fails, execute the commands below to retry :
-1. `vagrant halt`
-2. `rm -rf .vagrant`
-3. `vagrant up`
+If the installation fails, execute `vagrant destroy` to rollback to a clean state.
