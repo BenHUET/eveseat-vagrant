@@ -9,8 +9,6 @@
 * `cd eveseat-vagrant`
 * `vagrant up`. It can take some times since it's deploying a whole dev environnement (mysql, php, apache, composer...) and configuring SeAT.
 * `vagrant ssh`
-* `sudo /etc/apache2/sites-available/seat.conf` and edit the `ServerAlias` value by the correct address for this virtual machine
-* `sudo apachectl restart`
 
 # Usage
 
