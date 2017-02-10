@@ -14,6 +14,7 @@ cd /var/www/
 composer create-project eveseat/seat seat
 sed -i -- 's/DB_USERNAME=seat/DB_USERNAME=root/g' /var/www/seat/.env
 sed -i -- 's/DB_PASSWORD=secret/DB_PASSWORD=password/g' /var/www/seat/.env
+sed -i -- 's/APP_DEBUG=false/APP_DEBUG=true/g' /var/www/seat/.env
 cd /var/www/seat/
 php artisan vendor:publish --force
 php artisan migrate
@@ -32,11 +33,7 @@ adduser ubuntu www-data
 chown -R ubuntu:www-data /var/www
 chmod -R guo+w /var/www/seat/storage/
 cp /vagrant/provisions/vhost /etc/apache2/sites-available/seat.conf
+a2dissite 000-default.conf
 a2ensite seat
 a2enmod rewrite
 apachectl restart
-echo "*********************************************************"
-echo "*********************************************************"
-echo "You must edit the apache2 vhost to reflect the correct IP address of this machine."
-echo "*********************************************************"
-echo "*********************************************************"

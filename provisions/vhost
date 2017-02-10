@@ -1,5 +1,5 @@
 <VirtualHost *:80>
-    ServerAlias 172.28.128.3
+    ServerName localhost
     DocumentRoot "/var/www/seat/public"
     ErrorLog /var/log/apache2/seat.local-error.log
     CustomLog /var/log/apache2/seat.local-access.log combined
