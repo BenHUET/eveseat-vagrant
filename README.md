@@ -1,6 +1,6 @@
 # Prerequisites
 
-* [Download and install Vagrant.](https://www.vagrantup.com/)
+* [Download and install Vagrant.](https://www.vagrantup.com/) [More info about Vagrant here.](https://www.vagrantup.com/docs/)
 * [Virtualbox 5.0.X.](https://www.virtualbox.org/wiki/Download_Old_Builds_5_0)
 
 # Installation
@@ -16,9 +16,14 @@
 
 You can now connect to your SeAT instance by browsing to `http://{ip address of the VM}/`.
 
-## Credentials
+# Credentials
 
 * SeAT `admin:password`
 * MySQL `root:password` (remote access allowed)
 
-[More info about Vagrant here.](https://www.vagrantup.com/docs/)
+# Troubleshooting
+
+If the installation fails, execute the commands below to retry :
+1. `vagrant halt`
+2. `rm -rf .vagrant`
+3. `vagrant up`
