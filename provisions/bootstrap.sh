@@ -37,3 +37,21 @@ a2dissite 000-default.conf
 a2ensite seat
 a2enmod rewrite
 apachectl restart
+
+echo " "
+echo " "
+echo " "
+echo "******************************"
+echo "******************************"
+echo " "
+echo "Deployment completed, SeAT should be available on one of these IP (if multiple) : `hostname -I`"
+echo "SeAT : admin:password"
+echo "MySQL : root:password (remote access allowed)"
+echo " "
+echo "Check for errors above. If there is any, most of the time, it's easier to just destroy the machine and try again."
+echo " "
+echo "******************************"
+echo "******************************"
+echo " "
+echo " "
+echo " "
