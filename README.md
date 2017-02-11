@@ -8,11 +8,11 @@
 * `git clone git@github.com:BenHUET/eveseat-vagrant.git`
 * `cd eveseat-vagrant`
 * `vagrant up`. It can take some times since it's deploying a whole dev environnement (mysql, php, apache, composer...) and configuring SeAT.
-* `vagrant ssh`
+* `vagrant ssh` to open an SSH connection to the machine.
 
 # Usage
 
-You can now connect to your SeAT instance by browsing to `http://{ip address of the VM}/`.
+You can now connect to your SeAT instance by browsing to `http://{ip address of the VM}/` (grap it with `ifconfig`).
 
 # Credentials
 
